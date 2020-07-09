@@ -45,7 +45,7 @@ class TestProject1(unittest.TestCase):
         self.assertEqual('Medium', main.str_size('spanish'))
         self.assertEqual('Large', main.str_size('schedule'))
         self.assertEqual('Very Long', main.str_size('hippopotamus'))
-        self.assertEqual('Very small', main.str_size('')))
+        self.assertEqual('Very small', main.str_size(''))
 
     # Test complex_condition
     def test_complex_condition(self):
