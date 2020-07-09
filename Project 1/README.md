@@ -5,6 +5,8 @@ Run `python3 test.py` to test your code.
 
 Run `python3 -v test.py` to see the results of each individual test.
 
+To reduce visual clutter while working, I highly recommend commenting out the tests that you're not working on. (By commenting out the function definition and its contents).
+
 Feel free to add onto test.py if you want to do more thorough testing.
 
 Part 1: Numbers and Strings
