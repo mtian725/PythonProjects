@@ -78,7 +78,7 @@ complex_condition(True, True, True) => False
 complex_condition(False, True, True) => True
 complex_condition(False, True, False) => False
 ```
-Part 4: Optional
+Part 4: Challenge (Optional)
 ----------------
 `def has_real_roots(a, b, c)`
 * **Description**: Assume you are given a quadratic equation of the form `ax^2 + bx + c`. Return True if this equation has real roots. Otherwise, return False. Assume that a =/= 0.
