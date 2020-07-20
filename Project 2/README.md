@@ -31,9 +31,98 @@ is a multiple of both, put **FizzBuzz**.
 fizzbuzz(15) => '1, 2, Fizz, 4, Buzz, Fizz, 7, 8,
                 Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz'
 ```
+
 Part 2: Arrays and 2D Arrays
 -----------------
+`def bubble_sort(arr)`
+* **Description**: Given an array of integers, sort the array from least to
+greatest. Do this by looping through the array until it is sorted, and if there
+is an element greater than the next element, swap them. This is also known as bubble sort, where the larger values "bubble" up to the end of the array.
+**Do not use the sort() function for this.**
+* **Examples**:
+```
+bubble_sort([20, -44, 29, -47, -9] => [-47, -44, -9, 20, 29]
+
+First scan: [20, -44, 29, -47, -9] => [-44, 20, 29, -47, -9]
+         => [-44, 20, -47, 29, -9] => [-44, 20, -47, -9, 29]
+
+Second scan: [-44, 20, -47, -9, 29] => [-44, -47, 20, -9, 29]
+          => [-44, -47, -9, 20, 29]
+
+Last scan: [-44, -47, -9, 20, 29] => [-47, -44, -9, 20, 29]
+```
+
+`def duplicate_val(arr)`
+* **Description**: Given an array of integers, return True if there exists two
+integers that are equal. Otherwise, return False.
+* **Examples**:
+```
+duplicate_val([1, 2, 3, 2, 5]) => True
+duplicate_val([7, 1, 5, 2, 8, 9]) => False
+```
+
+`def is_square_matrix(arr)`
+* **Description**: Given a 2D array of values, return True if it is a square
+matrix. Otherwise, return False. A square matrix is one where the number of
+columns and the number of rows are equal.
+* **Examples**:
+```
+is_square_matrix([[1, 2, 1], [2, 1, 2], [1, 2, 1]]) => True
+
+[[1, 2, 1],
+[2, 1, 2],
+[1, 2, 1]]
+
+is_square_matrix([[3], [2, 1], [1, 2, 1, 5]]) => False
+[[3],
+[2, 1],
+[1, 2, 1, 5]]
+```
+
 Part 3: Dictionaries
 -----------------
+`def total_100(dict)`
+* **Description**: Given some dictionaries where all the values are integers,
+return True if the sum of all those values is greater than or equal to 100.
+Return False otherwise.
+* **Examples**:
+```
+total_100({1: 57, 2: 17, 3:40}) => True
+total_100({1: 15, 2: 13, 3: 10}) => False
+```
+
+`def fib(num)`
+* **Description**: Given some number, return a dictionary that has that many
+Fibonacci numbers.
+* **Examples**:
+```
+fib(2) => {1: 0, 2: 1}
+fib(5) => {1: 0, 2: 1, 3: 1, 4: 2, 5: 3}
+```
+
 Part 4: Challenge (Optional)
 -----------------
+`def matrix_sort(arr)`
+* **Description**: Given a 2D array, sort it. You can assume that the matrix
+will be square. You can use any sorting method, but **do not use the sort() function for this.**
+* **Examples**:
+```
+matrix_sort([[-10, -7, 7], [4, 1, -5], [-1, -4, -2]] =>
+    [[-10, -7, -5], [-4, -2, -1], [1, 4, 7]]
+
+matrix_sort([[10, -8, -3], [-2, -3, -5], [8, 10, -8]]) =>
+    [[-8, -8, -5], [-3, -3, -2], [8, 10, 10]]
+```
+
+`def matrix_mult(arr, arr)`
+* **Description**: Given two 2D arrays, multiply them together. Assume that
+these matrices are valid to be multiplied together. If you're unsure how the
+math works, there are many resources online explaining it.
+* **Examples**:
+```
+matrix_mult([[1, 3],[2, -1]], [[4, 3], [-2, 4]]) =>
+    [[-2, 15], [10, 2]]
+
+matrix_mult([[1, 3], [2, -1], [3, 4]], [[4, 3, -2], [4, -5, -1]]) =>4
+    [[16, -12, -5], [4, 11, -3], [28, -11, -10]]
+```
