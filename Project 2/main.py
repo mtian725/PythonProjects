@@ -40,8 +40,6 @@ def matrix_sort(arr):
     return None
 
 # matrix_mult(arr, arr)
-def matrix_mult(arr, arr):
+def matrix_mult(arr1, arr2):
     # Your code here
     return None
-
-    
